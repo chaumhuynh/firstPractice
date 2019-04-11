@@ -1,0 +1,83 @@
+Microsoft Windows [Version 10.0.16299.431]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+C:\Users\Chau>mvn
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.300 s
+[INFO] Finished at: 2018-05-12T10:38:27-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] No goals have been specified for this build. You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/NoGoalSpecifiedException
+
+C:\Users\Chau>javac -version
+'javac' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Chau>javac --version
+'javac' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Chau>java --version
+java 10.0.1 2018-04-17
+Java(TM) SE Runtime Environment 18.3 (build 10.0.1+10)
+Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10.0.1+10, mixed mode)
+
+C:\Users\Chau>cd C:\Users\Chau\eclipse-workspace\com.project
+
+C:\Users\Chau\eclipse-workspace\com.project>mvn clean
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.project:com.project >-----------------------
+[INFO] Building test 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ com.project ---
+[INFO] Deleting C:\Users\Chau\eclipse-workspace\com.project\target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.008 s
+[INFO] Finished at: 2018-05-12T10:55:39-04:00
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\Chau\eclipse-workspace\com.project>mvn test
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.project:com.project >-----------------------
+[INFO] Building test 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ com.project ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ com.project ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ com.project ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ com.project ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to C:\Users\Chau\eclipse-workspace\com.project\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ com.project ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.632 s
+[INFO] Finished at: 2018-05-12T10:55:51-04:00
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\Chau\eclipse-workspace\com.project>
